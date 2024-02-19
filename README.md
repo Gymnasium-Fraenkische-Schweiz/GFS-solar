@@ -2,16 +2,15 @@
 
 Optimizing PV-Power usage by Home Automation Server (HomeAssistant)
 
-## Jugend Forscht 2024
+## Jugend Forscht 2024
 
 Energieverteilungssystem für kleine bis mittelgroße Solaranlagen
 Niklas Brütting, Erik Besold, Nicolas Flotho
 Gymnasium Fränkische Schweiz, Ebermannstadt
 
 26. Januar 2024
-  
 
-### Projektüberblick
+### Projektüberblick
 
 Besitzern kleiner- bis mittelgroßer Photovoltaikanlagen mangelt es bisher an preislich
 adäquaten Möglichkeiten des produktiven Einsatzes selbstgenerierter Solarenergie.
