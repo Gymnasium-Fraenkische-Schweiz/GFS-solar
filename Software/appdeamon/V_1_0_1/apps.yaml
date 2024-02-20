@@ -1,0 +1,47 @@
+#hello_world:
+#  module: hello
+#  class: HelloWorld
+
+cpv_manager:
+  module: cPVman_V_1_0_1
+
+  class: cpvman
+
+  # Wenn der physikalische Hauszähler gefunden,
+  # wird dieser für die Steuerung verwendet.
+  # Durch setzen der Variablen "Simulation = True"
+  # kann die Verwendung des Dummy Zählers erzwungen
+  # werden.
+  Simulation: True
+
+  # Der F-Schalter darf erst bei einem bestimmten
+  # Überschuss einschalten. Dieser Wert muss an die
+  # Größe der PV-Anlage und an die Leistung des
+  # Heizstabs angepasst werden.
+  # Bei unterschreiten der off Grenze wird der
+  # F-Schalter wieder aus geschaltet.
+  # Die Angaben sind in Watt.
+  TriggerLevelForSwitchF_on: 1999
+  TriggerLevelForSwitchF_off: 50
+
+  # Bei Unterschreiten dieser Leistung in W wird
+  # das Laden an der Wall-Box abgeschaltet.
+  MinimalWbPower: 500
+
+  # Bei Unterschreiten dieser Leistung in W wird
+  # der C-Schalter abgeschaltet.
+  MinimalCPower: 200
+
+  # Der C-Schalter wird eingeschaltet, wenn der
+  # PV Überschuss über der CTriggerPower Schwelle
+  # in Watt liegt und der aktuelle Zeitpunkt im
+  # Trigger-Fenster liegt.
+  TriggerLevelForSwitchC: 2000
+  TriggerIntervalStart: 12
+  TriggerIntervalEnd: 19
+  
+
+  # Optional kann der C-Schalter am Ende des Zeit-
+  # Fensters ohne Bedinung aktiviert werden.
+  TriggerAutoStart: True
+
